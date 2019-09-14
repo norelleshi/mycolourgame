@@ -5,7 +5,6 @@ var colors = [];
 var pickedColor;
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.getElementById("colorDisplay");
-var matchColor = document.getElementById("matchColor");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
@@ -68,7 +67,6 @@ function reset(){
     pickedColor = pickColor();
     //change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
-	matchColor.textContent = pickedColor;
     resetButton.textContent = "New Colours";
 
     messageDisplay.textContent = "";

@@ -2,6 +2,7 @@ body {
     background-color: #232323;
     margin: 0;
     font-family: "Montserrat", "Avenir";
+	letter-spacing: 1px;
 }
 
 .square {
@@ -87,10 +88,7 @@ button:hover {
 .instuction {
 	color: white;
 	margin: auto .5rem;
-}
-
-#matchColor {
-	padding-top: 2rem;
+	letter-spacing: 1px;
 }
 
 .reference {
