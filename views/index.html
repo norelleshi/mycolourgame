@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
 </head>
 <body>
+    <div id="message"></div>
     <h1>
-        The Great 
+        My Colour Game
         <br>
         <span id="colorDisplay">RGB</span>
-        <br>
-        Color Game
     </h1>
     <div id="stripe">
-        <button id="reset">New colors</button>
-        <span id="message"></span>
+        <button id="reset">Renew</button>
         <button class="mode">Easy</button>
         <button class="mode selected">Hard</button>
     </div>
@@ -28,6 +26,11 @@
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
+
+		<div class="instuction">
+			Instuctions: choose a colour that matches the colour of
+			<span id="matchColor"></span>
+		</div>
     </div>
 <script type="text/javascript" src="/javascripts/app.js"></script>    
 </body>

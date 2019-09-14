@@ -5,6 +5,7 @@ var colors = [];
 var pickedColor;
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.getElementById("colorDisplay");
+var matchColor = document.getElementById("matchColor");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
@@ -26,13 +27,17 @@ function setupSquares(){
             var clickedColor = this.style.backgroundColor;
             //compare color to pickedColor
             if(clickedColor === pickedColor){
-                messageDisplay.textContent = "Correct!";
-                resetButton.textContent = "Play Again?";
+                messageDisplay.textContent = "Correct! ㋡";
+				messageDisplay.style.backgroundColor = "white";
+				messageDisplay.style.color = "steelblue";
+                resetButton.textContent = "Again?";
                 changeColors(clickedColor);
                 h1.style.backgroundColor = clickedColor;
             } else {
                 this.style.backgroundColor = "#232323";
-                messageDisplay.textContent = "Try Again";
+                messageDisplay.textContent = "Try Again! ☹";
+				messageDisplay.style.backgroundColor = "white";
+				messageDisplay.style.color = "indianred";
             }
         });
     }
@@ -57,13 +62,14 @@ function setupModeButtons(){
 }
 
 function reset(){
-    //generate all new colors
+    //generate all Renew
     colors = generateRandomColors(numSquares);
     //pick a new random color from array
     pickedColor = pickColor();
     //change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
-    resetButton.textContent = "New Colors";
+	matchColor.textContent = pickedColor;
+    resetButton.textContent = "Renew";
 
     messageDisplay.textContent = "";
     //change colors of squares
