@@ -22,6 +22,7 @@ body {
 }
 
 h1 {
+	font-size:1rem;
     text-align: center;
     line-height: 1.1;
     font-weight: normal;
@@ -29,11 +30,11 @@ h1 {
     background: steelblue;
     margin: 0;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: .8rem 0;
 }
 
 #colorDisplay {
-    font-size: 100%;
+    font-size: 200%;
 }
 
 #message {
@@ -41,11 +42,9 @@ h1 {
     /* width: 20%; */
 	color: white;
 	font-size: 1.4rem;
-	/* margin: 1rem auto; */
 	text-align: center;
 	font-weight: 600;
 	text-transform: uppercase;
-	/* font-family: "Montserrat", "Avenir"; */
 }
 
 #stripe {
@@ -91,4 +90,8 @@ button:hover {
 
 #matchColor {
 	padding-top: 2rem;
+}
+
+.reference {
+	color: steelblue;
 }

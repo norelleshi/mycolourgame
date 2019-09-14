@@ -28,15 +28,15 @@ function setupSquares(){
             //compare color to pickedColor
             if(clickedColor === pickedColor){
                 messageDisplay.textContent = "Correct! ㋡";
-				messageDisplay.style.backgroundColor = "white";
+				messageDisplay.style.backgroundColor = "transparent";
 				messageDisplay.style.color = "steelblue";
-                resetButton.textContent = "Again?";
+                resetButton.textContent = "Play Again?";
                 changeColors(clickedColor);
                 h1.style.backgroundColor = clickedColor;
             } else {
                 this.style.backgroundColor = "#232323";
                 messageDisplay.textContent = "Try Again! ☹";
-				messageDisplay.style.backgroundColor = "white";
+				messageDisplay.style.backgroundColor = "transparent";
 				messageDisplay.style.color = "indianred";
             }
         });
@@ -62,14 +62,14 @@ function setupModeButtons(){
 }
 
 function reset(){
-    //generate all Renew
+    //generate all New Colours
     colors = generateRandomColors(numSquares);
     //pick a new random color from array
     pickedColor = pickColor();
     //change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
 	matchColor.textContent = pickedColor;
-    resetButton.textContent = "Renew";
+    resetButton.textContent = "New Colours";
 
     messageDisplay.textContent = "";
     //change colors of squares

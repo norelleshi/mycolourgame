@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Color Game</title>
+    <title>My Colour Game</title>
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
 </head>
 <body>
-    <div id="message"></div>
     <h1>
-        My Colour Game
+        The Colour Guessing Game
         <br>
         <span id="colorDisplay">RGB</span>
     </h1>
     <div id="stripe">
-        <button id="reset">Renew</button>
+        <button id="reset">New Colours</button>
         <button class="mode">Easy</button>
         <button class="mode selected">Hard</button>
     </div>
+    <div id="message"></div>
     <div id="container">
         <div class="square"></div>
         <div class="square"></div>
@@ -28,8 +28,9 @@
         <div class="square"></div>
 
 		<div class="instuction">
-			Instuctions: choose a colour that matches the colour of
-			<span id="matchColor"></span>
+			* Instuctions: R, G and B stand for red, green and blue respectively. Guess a colour that matches the colour of
+			<span id="matchColor"></span>.
+			<a class="reference" href="https://en.wikipedia.org/wiki/RGB_color_model">Learn more &rarr;</a>
 		</div>
     </div>
 <script type="text/javascript" src="/javascripts/app.js"></script>    
